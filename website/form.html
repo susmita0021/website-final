@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Register</title>
+	 <link rel="stylesheet" href="styleweb.css">
+	  <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+	<style type="text/css">
+		body{
+			background-image:  linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('https://images.ctfassets.net/hrltx12pl8hq/6TOyJZTDnuutGpSMYcFlfZ/4dfab047c1d94bbefb0f9325c54e08a2/01-nature_668593321.jpg?fit=fill&w=480&h=270');
+			height: 100vh;
+			background-size: cover;
+			background-position: center;
+		}
+		.login-page{
+			width:360px ;
+			padding: 10% 0 0;
+			margin: auto;
+		}
+		.form{
+			position: relative;
+			z-index: 1;
+			background: rgba(7, 40, 195, 0.8);
+			max-width: 360px;
+			margin: 0 auto 100px;
+			padding: 45px;
+			text-align: center;
+			
+
+		}
+		.form input{
+			font-family: "Roboto",sans-serif;
+			outline: 1;
+			background: #f2f2f2;
+			width: 100%;
+			border: 0;
+			margin: 0 0 15px;
+			padding: 15px;
+			box-sizing: border-box;
+			font-size: 14px;
+
+		}
+		.form button{
+			font-family: "Roboto",sans-serif;
+			text-transform: uppercase;
+			outline: 0;
+			background: #4CAF50;
+			width: 100%;
+			border: 0;
+			padding: 15px;
+			color: #FFFFFF;
+			font-size: 14px;
+			cursor: pointer;
+
+		}
+		.form button:hover ,.form button:active{
+			background: #43A047;
+		}
+		.form .message{
+			margin: 15px 0 0;
+			color: aliceblue;
+			font-size: 12px;
+		}
+		.form .message a{
+			color: #4CAF50;
+			text-decoration: none;
+		}
+		.form .register-form{
+			display: none;
+		}
+		.vl {
+  			border-left: 6px solid black;
+  			height: 225px;
+		}
+		.line{
+			margin-left: 150px;
+			margin-top: 5px;
+			float: left;
+			border: 2px solid black;
+			color: white;
+		}
+		.dis{
+			margin-left: 150px;
+			margin-top: 50px;
+			float: left;
+			font-size: 17px;
+			color: white;
+			height: 60px;
+		}
+	</style>
+</head>
+<body>
+
+    <nav class="navbar background h-nav-resp">
+        <ul class ="nav-list v-class-resp">
+            <div class="logo"><img src="C:\Users\DELL\Desktop./leaf.jpg" alt="logo"></div>
+            <li><a href="indexweb.html">Home</a></li>
+            <li><a href="About.html">About us</a></li>
+            <li><a href="gallery.html">Gallery</a><li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="contactus.html">Contact us</a></li>
+            <li><a href="form.html">Register</a></li>
+        </ul>
+            <div class="rightNav v-class-resp">
+                <input type="text" name="Search" id="Search">
+                <button class="btn btn-sm">Search</button>
+
+            </div>
+
+
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+
+            
+
+</div>
+
+            
+            
+        
+    </nav>
+	<div class="login-page">
+		<div class="form">
+			<form class="register-form">
+				<input type="text" placeholder="name"/>
+				<input type="text" placeholder="password"/>
+				<input type="text" placeholder="email id"/>
+				<button>Create</button>
+				<p class="message">Already Registered?<a href="#">Login </a>
+				</p>
+
+			</form>
+
+			<form class="login-form">
+				<input type="text" placeholder="user name"/>
+				<input type="password" placeholder="password"/>
+				<button>Login</button>
+				<p class="message">Not Registered?<a href="#">Register</a>
+				</p>
+			</form>
+
+
+			
+		</div>
+	</div>
+	<script src='https://code.jquery.com/jquery-3.6.0.min.js'>
+		
+	</script>
+	<script>
+		$('.message a').click(function(){
+		$('form').animate({height: "toggle", opacity: "toggle"},"slow");
+		});
+	</script>
+	 <footer  style="margin-top: 50px; background-color: white;">
+		<div style="width:10%; float:left;">
+			<h2>Site Map</h2>
+			<ul style="list-style-type: none;">
+				<li><a href="indexweb.html">Home</li></a>
+				<li><a href="About.html">About us</li></a>
+				<li><a href="services.html"> Services</li></a>
+				<li><a href="contactus.html">Contact</li></a>
+				<li><a href="form.html">Register</li></a>
+			</ul>
+		</div>
+		<div class="vl" style="width:2%; float:left;"></div>
+		<div style="width:10%; float:left;">
+			<h2>Client Testimonals</h2>
+	    <p>Registered members saying."Enrolling in save the nature has positivity.”</p>
+			
+		</div>
+		<div class="vl" style="width:2%; margin-left: 30px; float:left;"></div>
+		<iframe style="width:50%; height: 160px;float:left;" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7066.909164523265!2d85.32098519999998!3d27.67234170000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1625152591384!5m2!1sen!2snp" width="800" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+		<div class="vl" style="width:2%;height: 160px; margin-left: 30px; float:left;"></div>
+		<div>
+			<h2>Where are we?</h2>
+			<ul style="list-style-type:none;">
+				<li>Kathmandu,</li>
+				<li>Nepal,</li>
+				<li>Pepsicola</li>
+				<li>Tel:01-566899</li>
+				<li>Mobile:9876543210</li>
+				<li>save.nature@gmail.com</li>
+				</ul>
+				</div>
+			</footer>
+				 <footer class="background">
+       
+		
+	
+	
+
+	
+ <p class="text-footer">
+
+
+        
+        Copyright &copy; 2027 www.SaveNature -All rights Reserved 
+        </p>
+        </footer>
+
+</body>
+</html>

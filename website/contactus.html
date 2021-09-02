@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact us</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <link rel="stylesheet" href="styleweb.css">
+    <style type="text/css">
+        body{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 100px;
+}
+
+.container:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: url("img/bg.jpg") no-repeat center;
+    background-size: cover;
+    filter: blur(50px);
+    z-index: -1;
+}
+.contact-box{
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+
+.left{
+    background: url("https://st3.depositphotos.com/13324256/16750/i/600/depositphotos_167503344-stock-photo-foliage.jpg") no-repeat center;
+    background-size: cover;
+    height: 100%;
+}
+
+.right{
+    padding: 25px 40px;
+}
+
+h2{
+    position: relative;
+    padding: 0 0 10px;
+    margin-bottom: 10px;
+}
+
+h2:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #2ecc71;
+}
+
+.field{
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0);
+    outline: none;
+    background-color: rgba(230, 230, 230, 0.6);
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: .3s;
+}
+
+.field:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+    min-height: 150px;
+}
+
+.btn{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: #2ecc71;
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn:hover{
+    background-color: #27ae60;
+}
+
+.field:focus{
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
+.vl {
+            border-left: 6px solid black;
+            height: 225px;
+        }
+
+        .line{
+            margin-left: 150px;
+            margin-top: 5px;
+            float: left;
+            border: 2px solid black;
+            color: white;
+        }
+        .dis{
+            margin-left: 150px;
+            margin-top: 50px;
+            float: left;
+            font-size: 17px;
+            color: white;
+        }
+
+@media screen and (max-width: 880px){
+    .contact-box{
+        grid-template-columns: 1fr;
+    }
+    .left{
+        height: 200px;
+    }
+
+}
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar background h-nav-resp">
+        <ul class ="nav-list v-class-resp">
+            <div class="logo"><img src="C:\Users\DELL\Desktop./leaf.jpg" alt="logo"></div>
+            <li><a href="indexweb.html">Home</a></li>
+            <li><a href="About.html">About us</a></li>
+            <li><a href="gallery.html">Gallery</a><li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="contactus.html">Contact us</a></li>
+            <li><a href="form.html">Register</a></li>
+        </ul>
+            <div class="rightNav v-class-resp">
+                <input type="text" name="Search" id="Search">
+                <button class="btn btn-sm">Search</button>
+
+            </div>
+
+
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+
+            
+
+</div>
+
+            
+            
+        
+    </nav>
+    <h1>Welcome to  contact page</h1>
+    
+
+    
+
+
+
+
+
+                <input type="text" class="field" placeholder="Your Name">
+                <input type="text" class="field" placeholder="Your Email">
+                <input type="text" class="field" placeholder="Phone">
+                <textarea placeholder="Your query" class="field"></textarea>
+                <button class="btn">Send</button>
+            </div>
+        </div>
+    </div>
+    <footer style="margin-top: 50px;">
+        <div style="width:10%; float:left;">
+            <h2>Site Map</h2>
+            <ul style="list-style-type: none;">
+                <li><a href="indexweb.html">Home</li></a>
+                <li><a href="About.html">About us</li></a>
+                <li><a href="services.html"> Services</li></a>
+                <li><a href="contactus.html">Contact</li></a>
+                <li><a href="form.html">Register</li></a>
+            </ul>
+        </div>
+        <div class="vl" style="width:2%; float:left;"></div>
+        <div style="width:10%; float:left;">
+            <h2>Client Testimonals</h2>
+        <p> Registered members saying."Enrolling in save the nature has positive impact on us.”</p>
+            
+        </div>
+        <div class="vl" style="width:2%; margin-left: 30px; float:left;"></div>
+        <iframe style="width:50%; float:left; height: 160px;" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7066.909164523265!2d85.32098519999998!3d27.67234170000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1625152591384!5m2!1sen!2snp" width="800" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="vl" style="width:2%; margin-left: 30px; float:left;"></div>
+        <div>
+            <h2>Where are we?</h2>
+            <ul style="list-style-type:none;">
+                <li>Kathmandu,</li>
+                <li>Nepal,</li>
+                <li>Pepsicola</li>
+                <li>Tel:01-566899</li>
+                <li>Mobile:9876543210</li>
+                <li>save.nature@gmail.com</li>
+                </ul>
+                </div>
+            </footer>
+                 <footer class="background">
+       
+        
+    
+    
+
+    
+ <p class="text-footer">
+
+
+        
+        Copyright &copy; 2027 www.SaveNature -All rights Reserved 
+        </p>
+        </footer>
+
+   
+
+</body>
+</html>
